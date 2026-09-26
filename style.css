@@ -1,0 +1,31 @@
+/* おれ声のサイト。配色はアプリの theme.ts（黒い筐体＋金）に合わせている */
+:root {
+  color-scheme: dark light;
+  --text: #f2f4f8;
+  --muted: #9aa3b2;
+  --bg: #101318;
+  --card: #1f242c;
+  --line: #343c49;
+  --tint: #f2b632;
+}
+@media (prefers-color-scheme: light) {
+  :root { --text: #11181c; --muted: #5b6670; --bg: #f5f6f8; --card: #ffffff; --line: #d8dce2; --tint: #9a6a00; }
+}
+body {
+  margin: 0;
+  padding: 24px 16px 48px;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.8 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; background: var(--card); border-radius: 16px; padding: 24px; }
+h1 { font-size: 24px; margin: 0 0 4px; }
+h2 { font-size: 18px; margin: 32px 0 8px; }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+ul { padding-left: 20px; }
+a { color: var(--tint); }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+nav { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 15px; }
